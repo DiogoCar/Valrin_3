@@ -1,0 +1,39 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercicio_fix;
+
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Discente
+ */
+
+public class Valrin {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+
+   int tp =0,mp= Integer.MAX_VALUE,pd;
+   String sp;
+   
+   while(true) {sp=JOptionPane.showInputDialog(null, "Quantidade produzida (digite -1 se deseja encerrar): "); 
+   pd = Integer.parseInt(sp); 
+   
+   if(pd == -1)break;
+   
+   tp += pd;
+   
+   if(pd < mp){mp=pd;}
+   
+   
+   }
+   
+   JOptionPane.showMessageDialog(null,"Total: "+tp+"\n"+"Menor produção: "+mp);
+    }
+   
+}
